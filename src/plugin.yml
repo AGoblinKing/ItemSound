@@ -1,0 +1,20 @@
+name: ItemSound
+main: com.wra.bukkit.ItemSound.ItemSound
+version: 1
+
+commands:
+    is:
+        description: Opens up the item sound configuration menu.
+        permission: itemsound.config
+        usage: |
+            /<command> [itemname] [soundurl]
+    itemsound:
+        description: Opens up the item sound configuration menu.
+        permission: itemsound.config
+        usage: |
+            /<command> [itemname] [soundurl]
+
+permissions:
+    itemsound.config:
+        description: Access to the itemsound configuration menu
+        default: false
