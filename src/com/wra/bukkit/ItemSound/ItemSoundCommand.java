@@ -43,6 +43,7 @@ public class ItemSoundCommand implements CommandExecutor {
             return false;
         }
         plugin.config.setProperty("effect."+split[0].toUpperCase(), split[1]);
+        plugin.config.save();
         sender.sendMessage("Set item pickup "+split[0].toUpperCase()+" to "+ split[1]);
 
         return true;
